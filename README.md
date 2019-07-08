@@ -1,7 +1,7 @@
 # ch.server.registry
 
 
-1) Maven install to get server.registry-1.0.0-SNAPSHOT.jar
+1) Maven install to get server-registry-1.0.0-SNAPSHOT.jar
 
 $ mvn install
 

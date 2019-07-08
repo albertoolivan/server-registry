@@ -11,11 +11,11 @@ VOLUME /tmp
 EXPOSE 8761
 
 # The application's jar file
-ARG JAR_FILE=target/server.registry-1.0.0-SNAPSHOT.jar
+ARG JAR_FILE=target/server-registry-1.0.0-SNAPSHOT.jar
 
 # Add the application's jar to the container
-ADD ${JAR_FILE} server.registry.jar
+ADD ${JAR_FILE} server-registry.jar
 
 # Run the jar file 
-ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/server.registry.jar"]
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/server-registry.jar"]
 
